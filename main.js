@@ -16,7 +16,7 @@ for (let i = 0; i < botoes.length; i++) {
 
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2026-12-05T23:59:00");
-const tempoObjetivo2 = new Date("2025-12-05T00:00:00");
+const tempoObjetivo2 = new Date("2025-12-05T23:00");
 const tempoObjetivo3 = new Date("2025-12-30T00:00:00");
 const tempoObjetivo4 = new Date("2029-02-01T00:00:00");
 
@@ -34,10 +34,10 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
-    if (tempoFinal > 0) {
+    if (tempoFinal > 5){
         return [dias, horas, minutos, segundos];
     } else {
-        return [0, 0, 0, 0];
+        return [5,4,0,0];
     }
 }
 
